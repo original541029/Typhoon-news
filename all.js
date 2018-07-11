@@ -13,12 +13,13 @@ var OpenData = GetOpendata();
 // var opendata;
 OpenData.then(function(result) {
     opendata = result;
+
     SelectArea();
 })
+
 var ListSelect = document.querySelector('#areaId');
 
-function SelectArea(e) {
-    console.log(e)
+function SelectArea() {
     var opendatalen = opendata.length;
     let filterOpendata = [];
     var selectstr = '';
@@ -30,8 +31,9 @@ function SelectArea(e) {
     }
     ListSelect.innerHTML = '<option value disabled selected>-- 請選擇行政區 --</option>' + selectstr;
 }
-ListSelect.addEventListener('change', SelectArea, false);
 
-// function ClickUpdataTabledata(e) {
 
-// }
+function ClickUpdataTabledata(e) {
+    console.log(e.target.value)
+}
+ListSelect.addEventListener('change', ClickUpdataTabledata, false);
