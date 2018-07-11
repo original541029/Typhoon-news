@@ -12,15 +12,16 @@ function GetOpendata() {
 var OpenData = GetOpendata();
 // var opendata;
 OpenData.then(function(result) {
-    opendata = result;
+    let opendata = result;
 
     SelectArea();
+    ClickUpdataTabledata()
 })
 
 var ListSelect = document.querySelector('#areaId');
 
 function SelectArea() {
-    var opendatalen = opendata.length;
+    alert(opendata);
     let filterOpendata = [];
     var selectstr = '';
     for (i = 0; i < opendatalen; i++) {
@@ -34,6 +35,8 @@ function SelectArea() {
 
 
 function ClickUpdataTabledata(e) {
+    console.log(opendata);
     console.log(e.target.value)
+
 }
 ListSelect.addEventListener('change', ClickUpdataTabledata, false);
