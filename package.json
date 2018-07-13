@@ -1,0 +1,27 @@
+{
+  "name": "anna",
+  "version": "1.0.0",
+  "description": "- AJAX/JSON",
+  "main": "all.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/original541029/Typhoon-news.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/original541029/Typhoon-news/issues"
+  },
+  "homepage": "https://github.com/original541029/Typhoon-news#readme",
+  "dependencies": {
+    "autoprefixer": "^8.6.5",
+    "gulp": "^3.9.1",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "^4.0.1"
+  }
+}

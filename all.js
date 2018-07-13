@@ -1,29 +1,29 @@
 function GetOpendata() {
-    return new Promise(function(resolve, reject) {
-        fetch('https://tpeoc.blob.core.windows.net/blobfs/GetDisasterSummary.json')
-            .then(function(response) {
+    return new Promise(function (resolve, reject) {
+        fetch('https://next.json-generator.com/api/json/get/Ek86hdRMr')
+            .then(function (response) {
                 return response.json();
             })
-            .then(function(myJson) {
+            .then(function (myJson) {
                 resolve(myJson);
             });
     });
 }
 var OpenData = GetOpendata();
-// var opendata;
-OpenData.then(function(result) {
-    let opendata = result;
-
+var opendata;
+OpenData.then(function (result) {
+    opendata = result;
+    console.log(opendata);
     SelectArea();
-    ClickUpdataTabledata()
 })
 
 var ListSelect = document.querySelector('#areaId');
 
 function SelectArea() {
-    alert(opendata);
+    console.log(opendata);
     let filterOpendata = [];
     var selectstr = '';
+    const opendatalen = opendata.length;
     for (i = 0; i < opendatalen; i++) {
         if (filterOpendata.indexOf(opendata[i].CaseLocationDistrict) < 0) {
             filterOpendata.push(opendata[i].CaseLocationDistrict)

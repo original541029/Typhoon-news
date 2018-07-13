@@ -32,7 +32,7 @@
 }
 
 .banner-minor-title {
-    top: 5em;
+    top: 11em;
 }
 
 .banner::after {
@@ -54,7 +54,7 @@
     display: flex;
     justify-content: center;
     z-index: 10;
-    bottom: 10em;
+    bottom: 14em;
 }
 
 #areaId {
@@ -78,5 +78,5 @@
     font-size: 12px;
     line-height: 49px;
     background: #e8185d;
-    color: white;
+    color: var(--light-color);
 }
