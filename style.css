@@ -3,10 +3,11 @@
     --dark-color: #000000;
     --light-color: #ffffff;
     --global-font-family: Microsoft JhengHei;
+    --banner-bg-color: rgba(255, 255, 255, 0.65);
 }
 
 .banner {
-    max-width: 100vw;
+    width: 100%;
     height: 600px;
     background: url('img/banner.jpg') no-repeat;
     background-size: cover;
@@ -17,7 +18,24 @@
     font-family: var(--global-font-family);
 }
 
-.title-banner {
+.banner-content {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    line-height: 3em;
+    z-index: 999;
+}
+
+.banner-title {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+
+/* .title-banner {
     position: absolute;
     display: flex;
     z-index: 10;
@@ -26,14 +44,11 @@
     padding: 6em 0;
 }
 
-.banner-title {
-    font-size: 35px;
-    font-weight: bold;
-}
+
 
 .banner-minor-title {
     top: 11em;
-}
+} */
 
 .banner::after {
     background-color: var(--dark-color);
@@ -48,25 +63,20 @@
     opacity: 0.3;
 }
 
-.select-group {
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    z-index: 10;
-    bottom: 14em;
-}
-
 #areaId {
-    height: 4em;
+    height: 2.5em;
     width: 18em;
+    font-size: 20px;
+    background-color: var(--banner-bg-color);
+    border: 1px solid var(--light-color);
 }
 
-.main {
+
+/* .main {
     display: flex;
     width: 100%;
     height: 100%;
-}
+} */
 
 .footer {
     font-family: var(--global-font-family);
