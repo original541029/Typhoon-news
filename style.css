@@ -34,22 +34,6 @@
     font-weight: bold;
 }
 
-
-/* .title-banner {
-    position: absolute;
-    display: flex;
-    z-index: 10;
-    width: 100%;
-    justify-content: center;
-    padding: 6em 0;
-}
-
-
-
-.banner-minor-title {
-    top: 11em;
-} */
-
 .banner::after {
     background-color: var(--dark-color);
     content: "";
@@ -70,13 +54,6 @@
     background-color: var(--banner-bg-color);
     border: 1px solid var(--light-color);
 }
-
-
-/* .main {
-    display: flex;
-    width: 100%;
-    height: 100%;
-} */
 
 .footer {
     font-family: var(--global-font-family);
