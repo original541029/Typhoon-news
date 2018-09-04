@@ -1,5 +1,54 @@
-$primary-color:red;
+@import "utilities";
+html,
 body {
-  color: $primary-color;
-  transform:rotate(120deg);
+    position: relative;
+    font-family: "Microsoft JhengHei", "FangSong", Arial, serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    height: 100%;
+}
+
+.header {
+    position: absolute;
+    z-index: 1;
+    background: black;
+    color: white;
+    font-size: 12px;
+    padding: 16px;
+    border: 6px solid #5387ca;
+    .header-title {
+        margin: 0% 0 6% 0;
+    }
+}
+
+.list-group {
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    padding: 3%;
+    right: 0;
+    z-index: 1;
+    background: #ffffff6b;
+    font-size: 12px;
+    .list-group-item {
+        background: #fff;
+        outline: 3px solid #6fa2db;
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+        margin: 0 0 5% 0;
+        padding: 2%;
+    }
+    .list-group-item-label {
+        width: 26%;
+        margin: 0 0 1% 0;
+    }
+    .list-group-item-content {
+        width: 70%;
+        margin: 0 0 1% 0;
+    }
 }
